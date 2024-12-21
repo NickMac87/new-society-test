@@ -3,132 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piggy-inspired Landing Page</title>
+    <title>Jungle Luxe - Boutique Rainforest Retreat</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/lucide-static@0.263.1/font/lucide.min.css" rel="stylesheet">
+    <!-- If this were Liquid, we'd use: {% include head.html %} -->
 </head>
-<body class="min-h-screen bg-white">
-    <!-- Navigation -->
-    <nav class="bg-white border-b">
+<body class="bg-stone-50">
+    <!-- NAVIGATION -->
+    <!-- If this were Liquid: {% include nav.html %} -->
+    <nav class="bg-stone-900/95 text-white fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <div class="text-2xl font-bold text-purple-700">piggy.</div>
+            <div class="flex justify-between h-20 items-center">
+                <div class="text-2xl font-serif">Jungle Luxe</div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#" class="text-gray-600 hover:text-purple-700">Products</a>
-                    <a href="#" class="text-gray-600 hover:text-purple-700">Solutions</a>
-                    <a href="#" class="text-gray-600 hover:text-purple-700">Pricing</a>
-                    <a href="#" class="text-gray-600 hover:text-purple-700">Resources</a>
+                    <a href="#rooms" class="hover:text-green-400">Rooms</a>
+                    <a href="#experiences" class="hover:text-green-400">Experiences</a>
+                    <a href="#dining" class="hover:text-green-400">Dining</a>
+                    <a href="#wellness" class="hover:text-green-400">Wellness</a>
                 </div>
-                <div>
-                    <button class="bg-purple-700 text-white px-6 py-2 rounded-full hover:bg-purple-800">
-                        Get Started
-                    </button>
-                </div>
+                <button class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+                    Book Now
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div class="bg-gradient-to-r from-purple-50 to-purple-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-            <div class="text-center">
-                <h1 class="text-5xl font-bold text-gray-900 mb-6">
-                    Boost Customer Loyalty<br>Automate Everything
-                </h1>
-                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                    Your all-in-one platform for creating meaningful customer relationships and driving repeat business through smart automation.
-                </p>
-                <div class="flex justify-center space-x-4">
-                    <button class="bg-purple-700 text-white px-8 py-3 rounded-full hover:bg-purple-800 flex items-center">
-                        Start Free Trial
-                        <i class="lucide-arrow-right ml-2"></i>
-                    </button>
-                    <button class="bg-white text-purple-700 px-8 py-3 rounded-full border border-purple-700 hover:bg-purple-50">
-                        Book Demo
-                    </button>
-                </div>
+    <!-- HERO SECTION -->
+    <!-- If this were Liquid: {% include hero.html %} -->
+    <div class="relative h-screen">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1582610116397-edb318620e96?w=1920')] bg-cover bg-center">
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        <div class="relative h-full flex items-center justify-center text-center text-white">
+            <div class="max-w-3xl px-4">
+                <h1 class="text-6xl font-serif mb-6">Where Luxury Meets Nature</h1>
+                <p class="text-xl mb-8">Experience the magic of our rainforest boutique retreat, where modern comfort harmonizes with wild beauty.</p>
+                <button class="bg-green-600 text-white px-8 py-4 rounded text-lg hover:bg-green-700">
+                    Start Your Adventure
+                </button>
             </div>
         </div>
     </div>
 
-    <!-- Features Section -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <div class="grid md:grid-cols-3 gap-12">
-            <div class="text-center">
-                <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <i class="lucide-shopping-bag h-8 w-8 text-purple-700"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-4">Smart Rewards</h3>
-                <p class="text-gray-600">Automatically reward customers based on their purchase behavior and preferences.</p>
-            </div>
-            <div class="text-center">
-                <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <i class="lucide-users h-8 w-8 text-purple-700"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-4">Customer Engagement</h3>
-                <p class="text-gray-600">Build lasting relationships through personalized communication and rewards.</p>
-            </div>
-            <div class="text-center">
-                <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <i class="lucide-bar-chart h-8 w-8 text-purple-700"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-4">Data Analytics</h3>
-                <p class="text-gray-600">Make data-driven decisions with comprehensive customer insights and reporting.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Stats Section -->
-    <div class="bg-purple-700 text-white py-16">
+    <!-- EXPERIENCE BLOCKS -->
+    <!-- If this were Liquid: {% for experience in site.experiences %} -->
+    <div class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-8 text-center">
-                <div>
-                    <div class="text-4xl font-bold mb-2">2M+</div>
-                    <div class="text-purple-200">Active Users</div>
+            <h2 class="text-4xl font-serif text-center mb-16">Unforgettable Experiences</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="bg-stone-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="lucide-tree h-10 w-10 text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Canopy Tours</h3>
+                    <p class="text-gray-600">Explore the rainforest from above with our expert naturalist guides.</p>
                 </div>
-                <div>
-                    <div class="text-4xl font-bold mb-2">150%</div>
-                    <div class="text-purple-200">Average ROI</div>
+                <div class="text-center">
+                    <div class="bg-stone-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="lucide-spa h-10 w-10 text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Jungle Spa</h3>
+                    <p class="text-gray-600">Indulge in treatments using local ingredients and ancient wisdom.</p>
                 </div>
-                <div>
-                    <div class="text-4xl font-bold mb-2">24/7</div>
-                    <div class="text-purple-200">Customer Support</div>
+                <div class="text-center">
+                    <div class="bg-stone-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="lucide-utensils h-10 w-10 text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Farm-to-Table</h3>
+                    <p class="text-gray-600">Savor organic cuisine from our own rainforest garden.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-50 border-t">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- AMENITIES SECTION -->
+    <!-- If this were Liquid: {% include amenities.html %} -->
+    <div class="bg-stone-900 text-white py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-serif text-center mb-16">Luxury Amenities</h2>
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
-                    <div class="text-2xl font-bold text-purple-700 mb-4">piggy.</div>
-                    <p class="text-gray-600">Making customer loyalty simple and effective.</p>
+                    <h3 class="text-green-400 text-lg mb-4">Wellness</h3>
+                    <ul class="space-y-2">
+                        <li>Infinity Pool</li>
+                        <li>Yoga Pavilion</li>
+                        <li>Massage Bungalows</li>
+                        <li>Steam Room</li>
+                    </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-4">Product</h4>
+                    <h3 class="text-green-400 text-lg mb-4">Dining</h3>
+                    <ul class="space-y-2">
+                        <li>Gourmet Restaurant</li>
+                        <li>Jungle Bar</li>
+                        <li>Private Dining</li>
+                        <li>Cooking Classes</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-green-400 text-lg mb-4">Activities</h3>
+                    <ul class="space-y-2">
+                        <li>Nature Trails</li>
+                        <li>Bird Watching</li>
+                        <li>Photography Tours</li>
+                        <li>Cultural Visits</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-green-400 text-lg mb-4">For Kids</h3>
+                    <ul class="space-y-2">
+                        <li>Junior Naturalist Program</li>
+                        <li>Adventure Playground</li>
+                        <li>Art Classes</li>
+                        <li>Wildlife Workshops</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ROOMS SHOWCASE -->
+    <!-- If this were Liquid: {% for room in site.rooms %} -->
+    <div class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-serif text-center mb-16">Luxury Accommodations</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="rounded-lg overflow-hidden shadow-xl">
+                    <img src="/api/placeholder/600/400" alt="Treehouse Suite" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Treehouse Suite</h3>
+                        <p class="text-gray-600 mb-4">Elevated luxury with panoramic rainforest views</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-green-600 font-semibold">From $450/night</span>
+                            <button class="bg-stone-900 text-white px-4 py-2 rounded hover:bg-stone-800">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-xl">
+                    <img src="/api/placeholder/600/400" alt="Garden Villa" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Garden Villa</h3>
+                        <p class="text-gray-600 mb-4">Private sanctuary with plunge pool</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-green-600 font-semibold">From $650/night</span>
+                            <button class="bg-stone-900 text-white px-4 py-2 rounded hover:bg-stone-800">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <!-- If this were Liquid: {% include testimonials.html %} -->
+    <div class="bg-stone-100 py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto">
+                <i class="lucide-quote text-green-600 h-12 w-12 mx-auto mb-8"></i>
+                <p class="text-2xl italic mb-6">"An incredible blend of luxury and nature. The experiences here are truly one-of-a-kind."</p>
+                <p class="text-gray-600">- National Geographic Traveler</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOKING CTA -->
+    <!-- If this were Liquid: {% include booking-cta.html %} -->
+    <div class="bg-stone-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-serif mb-6">Begin Your Jungle Luxe Experience</h2>
+            <p class="text-lg text-stone-300 mb-8">Book directly for exclusive benefits and special offers</p>
+            <button class="bg-green-600 text-white px-8 py-4 rounded text-lg hover:bg-green-700">
+                Check Availability
+            </button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <!-- If this were Liquid: {% include footer.html %} -->
+    <footer class="bg-stone-800 text-stone-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-serif text-white mb-4">Jungle Luxe</div>
+                    <p>A luxury rainforest retreat where nature meets comfort.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
                     <div class="space-y-2">
-                        <div><a href="#" class="text-gray-600 hover:text-purple-700">Features</a></div>
-                        <div><a href="#" class="text-gray-600 hover:text-purple-700">Pricing</a></div>
-                        <div><a href="#" class="text-gray-600 hover:text-purple-700">Security</a></div>
+                        <div>info@jungleluxe.example</div>
+                        <div>+1 (555) 123-4567</div>
+                        <div>Rainforest Reserve, Costa Rica</div>
                     </div>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-4">Company</h4>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
                     <div class="space-y-2">
-                        <div><a href="#" class="text-gray-600 hover:text-purple-700">About</a></div>
-                        <div><a href="#" class="text-gray-600 hover:text-purple-700">Careers</a></div>
-                        <div><a href="#" class="text-gray-600 hover:text-purple-700">Contact</a></div>
+                        <div><a href="#" class="hover:text-green-400">Experiences</a></div>
+                        <div><a href="#" class="hover:text-green-400">Sustainability</a></div>
+                        <div><a href="#" class="hover:text-green-400">Gallery</a></div>
                     </div>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-4">Resources</h4>
-                    <div class="space-y-2">
-                        <div><a href="#" class="text-gray-600 hover:text-purple-700">Blog</a></div>
-                        <div><a href="#" class="text-gray-600 hover:text-purple-700">Documentation</a></div>
-                        <div><a href="#" class="text-gray-600 hover:text-purple-700">Support</a></div>
-                    </div>
+                    <h4 class="text-white font-semibold mb-4">Newsletter</h4>
+                    <p class="mb-4">Subscribe for special offers and updates</p>
+                    <input type="email" placeholder="Your email" class="w-full px-4 py-2 rounded bg-stone-700 border-stone-600 text-white">
                 </div>
             </div>
         </div>
