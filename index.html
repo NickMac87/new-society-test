@@ -3,76 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to New Society</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        
-        nav {
-            background: #333;
-            padding: 1rem;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-right: 1rem;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        h1, h2 {
-            color: #333;
-        }
-        
-        .section {
-            margin: 2rem 0;
-            padding: 1rem;
-            background: #f9f9f9;
-            border-radius: 5px;
-        }
-        
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-    </style>
+    <title>Piggy-inspired Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/lucide-static@0.263.1/font/lucide.min.css" rel="stylesheet">
 </head>
-<body>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+<body class="min-h-screen bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-2xl font-bold text-purple-700">piggy.</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-purple-700">Products</a>
+                    <a href="#" class="text-gray-600 hover:text-purple-700">Solutions</a>
+                    <a href="#" class="text-gray-600 hover:text-purple-700">Pricing</a>
+                    <a href="#" class="text-gray-600 hover:text-purple-700">Resources</a>
+                </div>
+                <div>
+                    <button class="bg-purple-700 text-white px-6 py-2 rounded-full hover:bg-purple-800">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
     </nav>
 
-    <div class="container">
-        <h1>Welcome to New Society</h1>
-        
-        <div class="section">
-            <h2>About Us</h2>
-            <p>We are a forward-thinking organization dedicated to demonstrating GitHub workflows and web development best practices.</p>
-        </div>
-        
-        <div class="section">
-            <h2>Our Mission</h2>
-            <p>To provide clear examples of version control and collaborative development processes while building meaningful web experiences.</p>
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-purple-50 to-purple-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold text-gray-900 mb-6">
+                    Boost Customer Loyalty<br>Automate Everything
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Your all-in-one platform for creating meaningful customer relationships and driving repeat business through smart automation.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <button class="bg-purple-700 text-white px-8 py-3 rounded-full hover:bg-purple-800 flex items-center">
+                        Start Free Trial
+                        <i class="lucide-arrow-right ml-2"></i>
+                    </button>
+                    <button class="bg-white text-purple-700 px-8 py-3 rounded-full border border-purple-700 hover:bg-purple-50">
+                        Book Demo
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <footer>
-        <p>Contact us: info@newsociety.example</p>
-        <p>&copy; 2024 New Society. All rights reserved.</p>
+    <!-- Features Section -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="text-center">
+                <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="lucide-shopping-bag h-8 w-8 text-purple-700"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Smart Rewards</h3>
+                <p class="text-gray-600">Automatically reward customers based on their purchase behavior and preferences.</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="lucide-users h-8 w-8 text-purple-700"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Customer Engagement</h3>
+                <p class="text-gray-600">Build lasting relationships through personalized communication and rewards.</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="lucide-bar-chart h-8 w-8 text-purple-700"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Data Analytics</h3>
+                <p class="text-gray-600">Make data-driven decisions with comprehensive customer insights and reporting.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="bg-purple-700 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold mb-2">2M+</div>
+                    <div class="text-purple-200">Active Users</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">150%</div>
+                    <div class="text-purple-200">Average ROI</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">24/7</div>
+                    <div class="text-purple-200">Customer Support</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold text-purple-700 mb-4">piggy.</div>
+                    <p class="text-gray-600">Making customer loyalty simple and effective.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Product</h4>
+                    <div class="space-y-2">
+                        <div><a href="#" class="text-gray-600 hover:text-purple-700">Features</a></div>
+                        <div><a href="#" class="text-gray-600 hover:text-purple-700">Pricing</a></div>
+                        <div><a href="#" class="text-gray-600 hover:text-purple-700">Security</a></div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <div class="space-y-2">
+                        <div><a href="#" class="text-gray-600 hover:text-purple-700">About</a></div>
+                        <div><a href="#" class="text-gray-600 hover:text-purple-700">Careers</a></div>
+                        <div><a href="#" class="text-gray-600 hover:text-purple-700">Contact</a></div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <div class="space-y-2">
+                        <div><a href="#" class="text-gray-600 hover:text-purple-700">Blog</a></div>
+                        <div><a href="#" class="text-gray-600 hover:text-purple-700">Documentation</a></div>
+                        <div><a href="#" class="text-gray-600 hover:text-purple-700">Support</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
