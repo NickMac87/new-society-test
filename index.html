@@ -8,18 +8,71 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        nav {
+            background: #333;
+            padding: 1rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
         }
-        h1 {
+        
+        h1, h2 {
             color: #333;
         }
-        p {
-            line-height: 1.6;
+        
+        .section {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to New Society</h1>
-    <p>This is a simple page to demonstrate GitHub workflows.</p>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome to New Society</h1>
+        
+        <div class="section">
+            <h2>About Us</h2>
+            <p>We are a forward-thinking organization dedicated to demonstrating GitHub workflows and web development best practices.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Our Mission</h2>
+            <p>To provide clear examples of version control and collaborative development processes while building meaningful web experiences.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact us: info@newsociety.example</p>
+        <p>&copy; 2024 New Society. All rights reserved.</p>
+    </footer>
 </body>
 </html>
